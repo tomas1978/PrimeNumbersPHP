@@ -15,12 +15,13 @@
 				return ($isPrime);
 			}
 			
-			for($i=2;$i<100;$i++) {
+			$first=1000;
+			$last=1100;
+			
+			for($i=$first;$i<$last;$i++) {
 				if(isPrime($i))
 					echo($i." ");
 			}
-		
-			
 		?>
 	</body>
 </html>
