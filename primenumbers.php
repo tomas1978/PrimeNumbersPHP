@@ -6,8 +6,9 @@
 	<body>
 		<h1>Prime numbers in an interval</h1>
 		<form>
-			Upper limit <input id="upper" />
-			Lower limit <input id="lower" />
+			Lower limit <input type="text" name=lower id="lower" />
+			Upper limit <input type="text" name=upper id="upper" />
+			<input type="submit" value="Ange intervall" />
 		</form>
 		<h2>Result</h2>
 		<?php
@@ -22,6 +23,8 @@
 			
 			$first=1000;
 			$last=1100;
+			
+			echo $upper;
 			
 			for($i=$first;$i<$last;$i++) {
 				if(isPrime($i))
